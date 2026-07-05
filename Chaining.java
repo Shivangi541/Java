@@ -4,25 +4,22 @@ class Student {
     int rollNumber;
     String college;
 
+    // now i will implement constructor chaining in this class
     Student() {
-        // default constructor
+        this("Unknown", 0, 0, "Unknown");
     }
 
     Student(String name) {
-        this.name = name;
+
+        this(name, 0, 0, "Unknown");
     }
 
     Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-
+        this(name, age, 0, "Unknown");
     }
 
     Student(String name, int age, int rollNumber) {
-        this.name = name;
-        this.age = age;
-        this.rollNumber = rollNumber;
-
+        this(name, age, rollNumber, "Unknown");
     }
 
     Student(String name, int age, int rollNumber, String college) {
